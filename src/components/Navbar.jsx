@@ -1,17 +1,22 @@
 import cirkleLogo from "../images/CirkleLogoBlue1.png";
+import { Link } from "react-router-dom";
+
 function Navbar() {
   return (
     <div>
-      <nav className="navbar fixed-top navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
-        <div className="container-fluid">
-          <a className="navbar-brand" href="#">
+      <nav
+        className="navbar fixed-top navbar-expand-lg bg-body-tertiary"
+        data-bs-theme="dark"
+      >
+        <div className="container-fluid ">
+          <a className="navbar-brand fs-4" href="#">
             <img
               src={cirkleLogo}
               alt="Logo"
               width="30"
               height="24"
-              className="d-inline-block align-text-top"
-            />
+              className="d-inline-block align-text-top mx-2"
+            /> 
             Investment
           </a>
           <button
@@ -28,9 +33,9 @@ function Navbar() {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#">
+                <Link to="/" className="nav-link active" aria-current="page" href="#">
                   Home
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="#">
@@ -50,12 +55,12 @@ function Navbar() {
                 <ul className="dropdown-menu">
                   <li>
                     <a className="dropdown-item" href="#">
-                      Action
+                      Simple Investment X
                     </a>
                   </li>
                   <li>
                     <a className="dropdown-item" href="#">
-                      Another action
+                      Standard Investment XX
                     </a>
                   </li>
                   <li>
@@ -63,40 +68,75 @@ function Navbar() {
                   </li>
                   <li>
                     <a className="dropdown-item" href="#">
-                      Something else here
+                      Premium Investment XXX
                     </a>
                   </li>
                 </ul>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <Link to="/contact" className="nav-link" href="#">
                   Contact us
-                </a>
+                </Link>
               </li>
               <div className="dropdown">
-  <button type="button" className="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
-    Dropdown form
-  </button>
-  <form className="dropdown-menu p-4">
-    <div className="mb-3">
-      <label htmlFor="exampleDropdownFormEmail2" className="form-label">Email address</label>
-      <input type="email" className="form-control" id="exampleDropdownFormEmail2" placeholder="email@example.com"/>
-    </div>
-    <div className="mb-3">
-      <label htmlFor="exampleDropdownFormPassword2" className="form-label">Password</label>
-      <input type="password" className="form-control" id="exampleDropdownFormPassword2" placeholder="Password"/>
-    </div>
-    <div className="mb-3">
-      <div className="form-check">
-        <input type="checkbox" className="form-check-input" id="dropdownCheck2"/>
-        <label className="form-check-label" htmlFor="dropdownCheck2">
-          Remember me
-        </label>
-      </div>
-    </div>
-    <button type="submit" className="btn btn-primary">Sign in</button>
-  </form>
-</div>
+                <button
+                  type="button"
+                  className="btn btn-primary dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  data-bs-auto-close="outside"
+                >
+                  Sign-in
+                </button>
+                <form className="dropdown-menu p-4 sign-in ">
+                  <div className="mb-3">
+                    <label
+                      htmlFor="exampleDropdownFormEmail2"
+                      className="form-label"
+                    >
+                      Email address
+                    </label>
+                    <input
+                      type="email"
+                      className="form-control"
+                      id="exampleDropdownFormEmail2"
+                      placeholder="email@example.com"
+                    />
+                  </div>
+                  <div className="mb-3">
+                    <label
+                      htmlFor="exampleDropdownFormPassword2"
+                      className="form-label"
+                    >
+                      Password
+                    </label>
+                    <input
+                      type="password"
+                      className="form-control"
+                      id="exampleDropdownFormPassword2"
+                      placeholder="Password"
+                    />
+                  </div>
+                  <div className="mb-3">
+                    <div className="form-check">
+                      <input
+                        type="checkbox"
+                        className="form-check-input"
+                        id="dropdownCheck2"
+                      />
+                      <label
+                        className="form-check-label"
+                        htmlFor="dropdownCheck2"
+                      >
+                        Remember me
+                      </label>
+                    </div>
+                  </div>
+                  <button type="submit" className="btn btn-primary">
+                    Sign in
+                  </button>
+                </form>
+              </div>
             </ul>
             <form className="d-flex" role="search">
               <input

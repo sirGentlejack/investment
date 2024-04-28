@@ -41,6 +41,17 @@ body{
   width: 100%;
 }
 
+/* contact */
+.contact{
+  margin-top: 80px;
+  .contact-img{
+    width: 250px;
+  }
+  form{
+    width: 300px;
+  }
+}
+
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) { 
   .hero{
@@ -58,4 +69,17 @@ body{
     grid-template-columns: 1fr 1fr;
     gap: 5px;
   }
+  .sign-in{
+    width: 500px;
+  }
+
+  .contact{
+    .contact-img{
+      width: 500px ;
+    }
+    form{
+      width: 600px;
+    }
+  }
+  
  }

@@ -4,6 +4,7 @@ import "./App.css";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import Features from "./components/Features";
 import Footer from "./components/Footer";
+import Contact from "./page/Contact";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" exact element={<Home />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
         <Features />
         <Footer />

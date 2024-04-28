@@ -2,7 +2,7 @@ import investmentHeroImg from "../images/investmentHeroImg2.jpg";
 
 function Hero() {
   return (
-    <div className="hero mt-5 d-flex justify-content-around align-items-center text-light">
+    <div className="hero mt-5 d-flex justify-content-around align-items-center text-light p-5">
       <div className="hero-text">
         <h1>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente,
