@@ -4,7 +4,7 @@ function Cards() {
   return (
     <div className="bg-light">
       <h3 className="text-center my-3">Investment plan</h3>
-      <div className="d-md-flex justify-content-around align-items-center my-4 d-block ms-4 ">
+      <div className="d-flex flex-column flex-md-row justify-content-around align-items-center my-4 d-block ">
         
           <div className="card my-3" style={{ width: "18rem" }}>
             <img src={moneyImg} className="card-img-top" alt="..." />

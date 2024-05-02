@@ -4,8 +4,8 @@ export default function Contact() {
   return (
     <div className="contact mb-5 ">
       <h1 className="text-center my-4">We’re Here To Help</h1>
-      <div className="d-md-flex justify-content-evenly">
-        <img src={contactUs} className="contact-img"  alt="" />
+      <div className="d-flex flex-column flex-md-row justify-content-evenly align-items-center">
+        <img src={contactUs} className="contact-img mb-3"  alt="" />
         <form>
           <div className="mb-3">
           <label htmlFor="exampleInputName" className="form-label">

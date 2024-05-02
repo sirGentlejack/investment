@@ -5,7 +5,7 @@ function Navbar() {
   return (
     <div>
       <nav
-        className="navbar fixed-top navbar-expand-lg bg-body-tertiary"
+        className="navbar fixed-top navbar-expand-lg bg-body-tertiary navbar2"
         data-bs-theme="dark"
       >
         <div className="container-fluid ">

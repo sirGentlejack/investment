@@ -1,17 +1,20 @@
+import { Link } from "react-router-dom";
+
 export default function Footer() {
   return (
+    <div>
     <div className="d-md-flex justify-content-around p-5 bg-body">
       <div>
         <h4>Navigation</h4>
-        <ul>
-          <li>Home</li>
-          <li>About Us</li>
-          <li>Contact Us</li>
-          <li>Investment plan</li>
-          <li>Create an Account</li>
+        <ul className="list-group">
+          <li className="list-group-item"><Link to="/" className="text-dark">Home</Link></li>
+          <li className="list-group-item">About Us</li>
+          <li className="list-group-item"> <Link to="/contact" className="text-dark">Contact Us</Link></li>
+          <li className="list-group-item">Investment plan</li>
+          <li className="list-group-item">Create an Account</li>
         </ul>
       </div>
-      <div>
+      <div className="bg-dark text-light p-3 my-3 rounded">
         <h4>Contact information</h4>
         <p>
           <strong>Address:</strong> 8, Lorem ipsum dolor sit amet consectetur
@@ -43,7 +46,7 @@ export default function Footer() {
         </div>
       </div>
       <div>
-        <form>
+        <form className="border-top border-primary border-3 rounded p-3">
           <div className="text-center">
             <h4>NewsLetter</h4>
             <p>Stay Updated!</p>
@@ -77,6 +80,8 @@ export default function Footer() {
           </button>
         </form>
       </div>
+    </div>
+      <p className="text-center">  All rights reserved by<strong className="text-danger-emphasis"> GentlejackB </strong> &copy 2024</p>
     </div>
   );
 }

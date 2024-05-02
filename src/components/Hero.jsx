@@ -2,8 +2,8 @@ import investmentHeroImg from "../images/investmentHeroImg2.jpg";
 
 function Hero() {
   return (
-    <div className="hero mt-5 d-flex justify-content-around align-items-center text-light p-5">
-      <div className="hero-text">
+    <div className="hero mt-5 d-flex justify-content-around align-items-center text-light p-5 ">
+      <div className="hero-text bg-dark p-3 rounded bg-opacity-50">
         <h1>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente,
           ex.
