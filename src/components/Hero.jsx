@@ -1,4 +1,4 @@
-import investmentHeroImg from "../images/investmentHeroImg2.jpg";
+import investmentHeroImg from "../images/heroImg2.jpg";
 
 function Hero() {
   return (

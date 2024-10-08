@@ -6,7 +6,7 @@ import TestimonialsData from "../data/Data"
 
 function Home() {
   return (
-    <div>
+    <div >
       <Hero />
       <Cards />
       <AboutUs />

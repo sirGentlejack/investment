@@ -38,9 +38,9 @@ function Navbar() {
                 </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <Link to="/aboutus" className="nav-link" href="#">
                   About us
-                </a>
+                </Link>
               </li>
               <li className="nav-item dropdown">
                 <a
@@ -54,22 +54,22 @@ function Navbar() {
                 </a>
                 <ul className="dropdown-menu">
                   <li>
-                    <a className="dropdown-item" href="#">
+                    <Link to="/investment" className="dropdown-item" href="#">
                       Simple Investment X
-                    </a>
+                    </Link  >
                   </li>
                   <li>
-                    <a className="dropdown-item" href="#">
+                    <Link to="/investment" className="dropdown-item" href="#">
                       Standard Investment XX
-                    </a>
+                    </Link>
                   </li>
                   <li>
                     <hr className="dropdown-divider" />
                   </li>
                   <li>
-                    <a className="dropdown-item" href="#">
+                    <Link to="/investment" className="dropdown-item" href="#">
                       Premium Investment XXX
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </li>
